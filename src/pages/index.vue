@@ -131,7 +131,9 @@ async function onSaveContact(form: Contact) {
   gap: 96px;
 
   &-img {
-    max-height: 585px;
+    img {
+      max-height: 585px;
+    }
   }
 
   &-content {
@@ -163,10 +165,31 @@ async function onSaveContact(form: Contact) {
       color: #7F8A9F;
       font-size: 14px;
       line-height: 20px;
+      padding: 16px;
     }
 
     &__action-button {
       height: 45px;
+    }
+  }
+
+  @media (max-width: $screenMobileEnd) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-img {
+      img {
+        max-height: 300px;
+      }
+    }
+
+    &-content{
+      &__title {
+        h2 {
+          font-size: 24px;
+        }
+      }
     }
   }
 }

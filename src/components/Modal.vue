@@ -44,6 +44,7 @@ function closeModal() {
     max-width: 500px;
     padding: 24px 32px;
     background: #151324;
+    box-sizing: border-box;
 
     .title {
       font-weight: 700;
@@ -62,6 +63,13 @@ function closeModal() {
       .close {
         cursor: pointer;
       }
+    }
+  }
+
+  @media (max-width: $screenMobileEnd) {
+    &-content {
+      max-width: calc(100vw - 32px);
+      padding: 24px 16px;
     }
   }
 }

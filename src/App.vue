@@ -30,5 +30,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-sizing: border-box;
+
+  @media (max-width: $screenMobileEnd) {
+    padding: 16px;
+  }
 }
 </style>

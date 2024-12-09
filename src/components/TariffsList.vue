@@ -123,5 +123,18 @@ function getPriceWithSale(price: number) {
       align-items: center;
     }
   }
+
+  @media (max-width: $screenMobileEnd) {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &-internet, &-vpn, &-sale, &-price, &-select {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
 </style>
